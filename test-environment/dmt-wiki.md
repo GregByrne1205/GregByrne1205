@@ -44,7 +44,7 @@ Process: SPN login -> kubelogin -> set namespace -> create/update secrets -> kub
 Ingress: Application Gateway ingress with host/path routing (dmt.pti-n.com). <BR>
 
 8. ### Releases & Tags<BR>
-On push to dev, the pipeline tags the repo v${PACKAGE_VERSION} via release-cli.<BR>
+Only on commit-to-dev will the pipelines tag the repo v${PACKAGE_VERSION} via release-cli.  This prevents unwanted images from being put in the container registry.<BR>
 
 9. ### Operational Settings<BR>
 Runner tag: pti-group-n.<BR>
