@@ -2,12 +2,12 @@
 
 1. ### Purpose & Scope<BR> 
 Build, test, scan, and (for dev) of CI/CD pipeline with consistent versioning and quality gates. Applies to MRs targeting dev and commits to dev. <BR>
-Pipeline references:  dmt-pipeline-core, dmt-service-core, & dmt-web-client <BR>
+Pipeline references: dmt-pipeline-core, dmt-service-core, & dmt-web-client <BR>
 
 2. ### Triggers & Branch Policy<BR> 
-Runs on: <BR> 
-Merge Requests where target branch is dev.<BR> 
-Pushes to dev.<BR> 
+Runs on :<BR> 
+- Merge Requests where target branch is dev.<BR> 
+- Pushes to dev.<BR> 
 Why: keeps pipelines focused on integration branches, MRs get full validation, and dev pushes also produce a versioned image which deploys to dmt-dev and creates a Git tag. <BR> 
 
 3. ### Stages & Key Jobs<BR>
